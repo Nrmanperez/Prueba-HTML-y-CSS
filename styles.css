@@ -6,24 +6,59 @@
 
 header {
     width: 100%;
+    min-width: 320px;
     height: 140px;
-    display: flex;
-}
-
-.container {
-    width: 100%;
-    height: 100px;
-    display: flex;
     background-color: black;
+    display: flex;
     align-items: center;
     justify-content: space-between;
+    border-top: 2px solid white;
 }
-
+/* 
 .left {
     padding-left: 100px;
-}
+} */
 
 .rigth {
-    margin-right: 50px;
+    padding-right: 75px;;
 }
 
+.rigth a {
+    text-decoration: none;
+    margin: 0 15px;
+    color: blue;
+}
+
+.rigth .line {
+    text-decoration: underline;
+}
+
+.rigth span {
+    color: white;
+}
+  
+@media(max-width: 930px) {
+    header{
+        padding: 0 50px;
+    }
+    .left {
+        padding-left: 0;
+    }
+    .rigth a {
+        display: none;
+    }
+    .rigth {
+        width: 10px;
+        height: 50px;
+        background-image: url('./img/burgen-button-icon.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+@media(max-width: 320px) {
+    .left img {
+        width: 100px;
+    }
+}
