@@ -4,23 +4,21 @@
     padding: 0;
 }
 
-header {
+.container {
     width: 100%;
-    min-width: 320px;
-    height: 140px;
+    min-width: 220px;
+    height: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
     background-color: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-top: 2px solid white;
 }
-/* 
-.left {
-    padding-left: 100px;
-} */
 
-.rigth {
-    padding-right: 75px;;
+.left img {
+    width: 165px;
 }
 
 .rigth a {
@@ -36,29 +34,86 @@ header {
 .rigth span {
     color: white;
 }
-  
-@media(max-width: 930px) {
-    header{
-        padding: 0 50px;
-    }
-    .left {
-        padding-left: 0;
-    }
-    .rigth a {
-        display: none;
-    }
-    .rigth {
-        width: 10px;
-        height: 50px;
-        background-image: url('./img/burgen-button-icon.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
+
+.icono-movil {
+    display: none;
 }
 
-@media(max-width: 320px) {
+.movil {
+    background-color: black;
+}
+
+.container-movil {
+    width: 385px;
+    height: 100px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-right: 30px;
+}
+
+.container-item {
+    width: 80%;
+    height: 100px;
+    min-width: 300px;
+    max-width: 385px;
+    padding-top: 30px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-container {
+    width: 385px;
+    height: 100px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-right: 30px;
+}
+
+.rigth-movil-enlace {
+    width: 40%;
+    height: auto;
+    min-width: 300px;
+    max-width: 385px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rigth-movil-enlace a {
+    text-decoration: none;
+    margin: 8px 15px;
+    color: blue;
+    border-bottom: 1px solid white;
+}
+.rigth-movil-enlace span {
+    color: white;
+    margin-left: 5px;
+}
+
+.rigth-movil {
+    padding-right: 30px;
+}
+
+@media(max-width: 700px) {
+
+    .rigth {
+        display: none;
+    }
+    
+    .icono-movil {
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-image: url('./img/burgen-button-icon.png');
+        background-repeat: no-repeat;
+    }
+
     .left img {
-        width: 100px;
+        width: 165px;
     }
 }
